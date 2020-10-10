@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterExtensions.BlazorMVVM", "src\BetterExtensions.BlazorMVVM\BetterExtensions.BlazorMVVM.csproj", "{507DEA05-B5D8-42E4-8845-A01EAF70E225}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterExtensions.BlazorMVVM", "src\BetterExtensions.BlazorMVVM\BetterExtensions.BlazorMVVM.csproj", "{507DEA05-B5D8-42E4-8845-A01EAF70E225}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F66DFAC1-046A-426D-9448-F6FBF15E461C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0524F80E-B513-4CE6-AEF4-5F267A0AF91F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96D61452-CCFD-4600-828F-F7EB2E54BF1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterExtensions.BlazorMVVM.Demo", "test\BetterExtensions.BlazorMVVM.Demo\BetterExtensions.BlazorMVVM.Demo.csproj", "{55BA9564-65A0-46E4-9DAB-6E02AA4B5C15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +23,17 @@ Global
 		{507DEA05-B5D8-42E4-8845-A01EAF70E225}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{507DEA05-B5D8-42E4-8845-A01EAF70E225}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{507DEA05-B5D8-42E4-8845-A01EAF70E225}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55BA9564-65A0-46E4-9DAB-6E02AA4B5C15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55BA9564-65A0-46E4-9DAB-6E02AA4B5C15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55BA9564-65A0-46E4-9DAB-6E02AA4B5C15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55BA9564-65A0-46E4-9DAB-6E02AA4B5C15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{507DEA05-B5D8-42E4-8845-A01EAF70E225} = {F66DFAC1-046A-426D-9448-F6FBF15E461C}
+		{55BA9564-65A0-46E4-9DAB-6E02AA4B5C15} = {0524F80E-B513-4CE6-AEF4-5F267A0AF91F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0A3F63E0-2804-45A5-B0AB-91D9A01D6F5F}

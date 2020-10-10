@@ -4,7 +4,7 @@ using System.Runtime.CompilerServices;
 
 namespace BetterExtensions.BlazorMVVM
 {
-    internal class Bindable : INotifyPropertyChanged, INotifyPropertyChanging
+    public class Bindable : INotifyPropertyChanged, INotifyPropertyChanging
     {
         private readonly ConcurrentDictionary<string, object> _properties = new ConcurrentDictionary<string, object>();
 
