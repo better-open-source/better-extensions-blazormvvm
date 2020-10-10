@@ -1,0 +1,19 @@
+<Project>
+
+    <PropertyGroup>
+        <Title>BetterExtensions.BlazorMVVM</Title>
+        <Authors>iTKerry</Authors>
+        <PackageDescription>BetterExtensions.BlazorMVVM.</PackageDescription>
+        <Copyright>Oleksandr 'iTKerry' Katrynets</Copyright>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>extensions</PackageTags>
+        <RepositoryUrl>https://github.com/itkerry/better-extensions-blazormvvm</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <LangVersion>8.0</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+</Project>

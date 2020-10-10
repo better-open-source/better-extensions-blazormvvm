@@ -6,12 +6,29 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BetterExtensions.BlazorMVVM", "src\BetterExtensions.BlazorMVVM\BetterExtensions.BlazorMVVM.csproj", "{507DEA05-B5D8-42E4-8845-A01EAF70E225}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F66DFAC1-046A-426D-9448-F6FBF15E461C}"
+ProjectSection(SolutionItems) = preProject
+	src\Directory.Build.props = src\Directory.Build.props
+EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0524F80E-B513-4CE6-AEF4-5F267A0AF91F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96D61452-CCFD-4600-828F-F7EB2E54BF1C}"
+ProjectSection(SolutionItems) = preProject
+	azure-pipelines.yml = azure-pipelines.yml
+	build.ps1 = build.ps1
+	build.sh = build.sh
+	Directory.build.props = Directory.build.props
+	Dockerfile = Dockerfile
+EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BetterExtensions.BlazorMVVM.Demo", "test\BetterExtensions.BlazorMVVM.Demo\BetterExtensions.BlazorMVVM.Demo.csproj", "{55BA9564-65A0-46E4-9DAB-6E02AA4B5C15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository Items", "Repository Items", "{123D24C2-A251-4D08-B015-D3D4070A86A5}"
+ProjectSection(SolutionItems) = preProject
+	icon.png = icon.png
+	LICENSE = LICENSE
+	README.md = README.md
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
