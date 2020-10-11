@@ -23,7 +23,7 @@
 
 [build-master-badge]: https://dev.azure.com/better-open-source/better-extensions/_apis/build/status/BetterExtensions.BlazorMVVM?branchName=master
 [build-develop-badge]: https://dev.azure.com/better-open-source/better-extensions/_apis/build/status/BetterExtensions.BlazorMVVM?branchName=develop
-[build]: https://dev.azure.com/better-open-source/better-extensions/_build?definitionId=6
+[build]: https://dev.azure.com/better-open-source/better-extensions/_build?definitionId=7
 
 ## Installation
 Latest version in here:  [![NuGet](https://img.shields.io/nuget/v/BetterExtensions.BlazorMVVM.svg)](https://www.nuget.org/packages/BetterExtensions.BlazorMVVM/)
