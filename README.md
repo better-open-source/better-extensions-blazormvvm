@@ -75,7 +75,7 @@ Step 3: Add rest of HTML. ViewModel props and commands are available through ```
 <button class="btn btn-primary" @onclick="ViewModel.IncrementCounter">Click me</button>
 ```
 
-Also ViewModel provide ```State``` parameter which is that indicate page state. Possible values is:
+Also ViewModel provide ```State``` parameter that indicate page state. Possible values is:
 * Clean
 * Loading
 * Normal
