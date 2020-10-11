@@ -58,14 +58,24 @@ public class CounterViewModel : BaseViewModel
 }
 ```
 
-Step 2: Inherit page from ```BasePage``` and mention ViewModel as data context
+Step 2: Inject ViewModel to your IoC. ```IServiceCollection``` is the default one
+
+>It is your decision of how to register ViewModels. It can be Transcient, Scoped or Singleton and depends on your needs.
+
+```csharp
+services
+    .AddTransient<CounterViewModel>()
+    .AddTransient<FetchDataViewModel>();
+```
+
+Step 3: Inherit page from ```BasePage``` and mention ViewModel as data context
 
 ```html
 @page "/counter"
 @inherits BetterExtensions.BlazorMVVM.BasePage<CounterViewModel>
 ```
 
-Step 3: Add rest of HTML. ViewModel props and commands are available through ```@ViewModel``` parameter
+Step 4: Add rest of HTML. ViewModel props and commands are available through ```@ViewModel``` parameter
 
 ```html
 <h1>Counter</h1>
