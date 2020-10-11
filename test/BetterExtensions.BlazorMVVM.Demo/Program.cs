@@ -17,7 +17,7 @@ namespace BetterExtensions.BlazorMVVM.Demo
             builder.Services
                 .AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) })
                 .AddTransient<CounterViewModel>()
-                .AddTransient<FetchDataViewModel>();
+                .AddScoped<FetchDataViewModel>();
 
             await builder.Build().RunAsync();
         }

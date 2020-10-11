@@ -34,16 +34,16 @@ namespace BetterExtensions.BlazorMVVM
             protected internal set => Set(value);
         }
 
-        public async Task StartLoadDataAsync()
+        public void StartLoadData()
         {
             if (IsLoadDataStarted) return;
             IsLoadDataStarted = true;
 
-            await LoadDataAsync(CancellationToken);
+            Task.Run(LoadDataAsync, CancellationToken);
         }
 
         //override this method for load data
-        protected virtual Task LoadDataAsync(CancellationToken cancellationToken)
+        protected virtual Task LoadDataAsync()
         {
             return Task.FromResult(0);
         }

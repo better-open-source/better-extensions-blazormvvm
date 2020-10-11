@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components;
 
 namespace BetterExtensions.BlazorMVVM
@@ -18,16 +17,15 @@ namespace BetterExtensions.BlazorMVVM
             BaseViewModel?.Dispose();
         }
 
-        protected override async Task OnInitializedAsync()
+        protected override void OnInitialized()
         {
-            await base.OnInitializedAsync();
+            base.OnInitialized();
 
-            if (BaseViewModel is null) 
+            if (BaseViewModel is null)
                 return;
 
             BaseViewModel.PropertyChanged += (obj, args) => StateHasChanged();
-
-            await BaseViewModel.StartLoadDataAsync();
+            BaseViewModel.StartLoadData();
         }
     }
 

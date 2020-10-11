@@ -20,14 +20,14 @@ namespace BetterExtensions.BlazorMVVM.Demo.ViewModels
         public ObservableCollection<WeatherForecast> Forecasts
         {
             get => Get<ObservableCollection<WeatherForecast>>();
-            set => Set(value);
+            private set => Set(value);
         }
 
-        protected override async Task LoadDataAsync(CancellationToken cancellationToken)
+        protected override async Task LoadDataAsync()
         {
             State = PageState.Loading;
 
-            var forecasts = await FetchForecastsData(cancellationToken);
+            var forecasts = await FetchForecastsData();
 
             IsLoadDataStarted = false;
 
@@ -38,10 +38,10 @@ namespace BetterExtensions.BlazorMVVM.Demo.ViewModels
                 : PageState.NoData;
         }
 
-        private async Task<WeatherForecast[]> FetchForecastsData(CancellationToken cancellationToken)
+        private async Task<WeatherForecast[]> FetchForecastsData()
         {
             const string requestUri = "sample-data/weather.json";
-            var result = await _httpClient.GetFromJsonAsync<WeatherForecast[]>(requestUri, cancellationToken);
+            var result = await _httpClient.GetFromJsonAsync<WeatherForecast[]>(requestUri);
             return result;
         }
     }
