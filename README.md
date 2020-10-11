@@ -74,3 +74,56 @@ Step 3: Add rest of HTML. ViewModel props and commands are available through ```
 
 <button class="btn btn-primary" @onclick="ViewModel.IncrementCounter">Click me</button>
 ```
+
+Also ViewModel provide ```State``` parameter which is that indicate page state. Possible values is:
+* Clean
+* Loading
+* Normal
+* NoData
+* Error
+
+Example of ```PageState``` usage:
+
+```html
+@page "/fetchdata"
+@inherits BetterExtensions.BlazorMVVM.BasePage<FetchDataViewModel>
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (ViewModel.State is PageState.Loading)
+{
+    <p><em>Loading...</em></p>
+}
+
+@if (ViewModel.State is PageState.NoData)
+{
+    <p><em>No forecasts for now...</em></p>
+}
+
+@if (ViewModel.State is PageState.Normal)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Temp. (C)</th>
+                <th>Temp. (F)</th>
+                <th>Summary</th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var forecast in ViewModel.Forecasts)
+        {
+            <tr>
+                <td>@forecast.Date.ToShortDateString()</td>
+                <td>@forecast.TemperatureC</td>
+                <td>@forecast.TemperatureF</td>
+                <td>@forecast.Summary</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+```
