@@ -40,4 +40,37 @@ dotnet add package BetterExtensions.BlazorMVVM
 
 ## Usage
 
+Step 1: Create ViewModel
 
+```csharp
+public class CounterViewModel : BaseViewModel
+{
+    public int CurrentCount
+    {
+        get => Get<int>();
+        set => Set(value);
+    }
+
+    public void IncrementCounter()
+    {
+        CurrentCount += 1;
+    }
+}
+```
+
+Step 2: Inherit page from ```BasePage``` and mention ViewModel as data context
+
+```html
+@page "/counter"
+@inherits BetterExtensions.BlazorMVVM.BasePage<CounterViewModel>
+```
+
+Step 3: Add rest of HTML. ViewModel props and commands are available through ```@ViewModel``` parameter
+
+```html
+<h1>Counter</h1>
+
+<p>Current count: @ViewModel.CurrentCount</p>
+
+<button class="btn btn-primary" @onclick="ViewModel.IncrementCounter">Click me</button>
+```
