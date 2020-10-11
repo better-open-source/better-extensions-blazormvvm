@@ -3,10 +3,10 @@
     <PropertyGroup>
         <Title>BetterExtensions.BlazorMVVM</Title>
         <Authors>iTKerry</Authors>
-        <PackageDescription>BetterExtensions.BlazorMVVM.</PackageDescription>
+        <PackageDescription>Implementation of MVVM pattern for Blazor</PackageDescription>
         <Copyright>Oleksandr 'iTKerry' Katrynets</Copyright>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageTags>extensions</PackageTags>
+        <PackageTags>blazor,mvvm,designpattern</PackageTags>
         <RepositoryUrl>https://github.com/itkerry/better-extensions-blazormvvm</RepositoryUrl>
         <RepositoryType>git</RepositoryType>
     </PropertyGroup>
