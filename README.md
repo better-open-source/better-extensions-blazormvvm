@@ -21,7 +21,7 @@
 |**master**|[![Build & Test][build-master-badge]][build]| 
 |**develop**|[![Build & Test][build-develop-badge]][build]|
 
-[build-master-badge]: https://dev.azure.com/better-open-source/better-extensions/_apis/build/status/BetterExtensions.BlazorMVVM?branchName=master
+[build-master-badge]: https://dev.azure.com/better-open-source/better-extensions/_apis/build/status/BetterExtensions.BlazorMVVM?branchName=main
 [build-develop-badge]: https://dev.azure.com/better-open-source/better-extensions/_apis/build/status/BetterExtensions.BlazorMVVM?branchName=develop
 [build]: https://dev.azure.com/better-open-source/better-extensions/_build?definitionId=7
 
