@@ -1,4 +1,5 @@
 ARG DotnetVersion=3.1
+
 FROM mcr.microsoft.com/dotnet/core/sdk:$DotnetVersion-alpine AS build
 WORKDIR /app
 
