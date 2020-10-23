@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="100px" src="https://github.com/itkerry/better-extensions-blazormvvm/raw/main/icon.png" align="center" />
+    <img width="100px" src="https://github.com/better-open-source/better-extensions-blazormvvm/raw/main/icon.png" align="center" />
     <h1 align="center">BetterExtensions | Blazor MVVM</h1>
     <p align="center">Implementation of MVVM pattern for Blazor.</p>
 </p>
